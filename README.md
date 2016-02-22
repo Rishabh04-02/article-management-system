@@ -2,11 +2,11 @@
 ##this repo will hold our DS project which is article management system
 
 ###How to get Started?
-1. Firstly, **fork** this repo from **Teamexe/Team-Exe-website** by clicking on fork button
+1. Firstly, **fork** this repo from **https://github.com/Rishabh04-02/article-management-system** by clicking on fork button
 
 2. Now **clone** the forked repo in your pc. For this first copy the url of your forked repo (use terminal or git bash):
    
-   	`git clone https://github.com/[username]/Team-Exe-website.git`
+   	`git clone https://github.com/Rishabh04-02/article-management-system.git`
    
    	[username] is replaced by your github username
 3. View the issues put up in the repo and try to fix them.
@@ -47,3 +47,9 @@ git clone "url of repository"
 git add --all
 git commit -m "commit name"
 git push origin gh-pages
+
+
+##Languages Used
+###C++
+###Html
+###MySql
