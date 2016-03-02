@@ -50,6 +50,6 @@ git push origin gh-pages
 
 
 ##Languages Used
-###C++
+###PHP
 ###Html
 ###MySql
