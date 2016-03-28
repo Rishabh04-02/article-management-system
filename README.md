@@ -1,4 +1,4 @@
-# article-management-system
+# article-management-sYsteM
 ##this repo will hold our DS project which is article management system
 
 ###How to get Started?
