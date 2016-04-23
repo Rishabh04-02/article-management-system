@@ -4,7 +4,7 @@ include_once 'dbconnect.php';
 
 if(isset($_SESSION['user'])!="")
 {
-	header("Location: main.php");
+	header("Location: admin.php");
 }
 
 if(isset($_POST['btn-login']))
@@ -15,15 +15,16 @@ if(isset($_POST['btn-login']))
 	$roll = trim($roll);
 	$upass = trim($upass);
 	
-	$res=mysql_query("SELECT user_id, user_name, user_pass FROM users WHERE user_roll='$roll'");
+	$res=mysql_query("SELECT id, pswd FROM adm WHERE id='$roll'");
 	$row=mysql_fetch_array($res);
 	
 	$count = mysql_num_rows($res); // if uname/pass correct it returns must be 1 row
 	
-	if($count == 1 && $row['user_pass']==($upass))
+	if($count == 1 && $row['pswd']==($upass))
 	{
-		$_SESSION['user'] = $row['user_name'];
-		header("Location: main.php");
+		$_SESSION['user'] = $row['id'];
+	    header("Location: admin.php");
+      
 	}
 	else
 	{
@@ -37,7 +38,7 @@ if(isset($_POST['btn-login']))
 <!DOCTYPE html>
 <head>
 <title>login - Article Management System</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="../style.css" type="text/css" />
 </head>
 <body>
 <center>
@@ -48,10 +49,10 @@ if(isset($_POST['btn-login']))
 	<td><h1>Login</h1></td>
 </tr>
 <tr>
-<td><input type="text" name="roll" placeholder="Your Roll No." title="Please put your roll" required /></td>
+<td><input type="text" name="roll" placeholder="Unique id" title="Unique id" required /></td>
 </tr>
 <tr>
-<td><input type="password" name="pass" placeholder="Your Password" title="Your password here please" required /></td>
+<td><input type="password" name="pass" placeholder="Password" title="Your password here please" required /></td>
 </tr>
 <tr>
 <td><button type="submit" name="btn-login">Login</button></td>

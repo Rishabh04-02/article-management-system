@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <title>Article Management System</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="../style.css" type="text/css" />
 </head>
 <body>
 <?php 

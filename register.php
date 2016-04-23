@@ -19,9 +19,13 @@ if(isset($_POST['btn-signup']))
 	$upass = trim($upass);
 	
 			
-		if(mysql_query("INSERT INTO users(user_name,user_roll,user_email,user_pass) VALUES('$uname','$roll','$email','$upass')"))
+	if(mysql_query("INSERT INTO users(user_name,user_roll,user_email,user_pass) VALUES('$uname','$roll','$email','$upass')"))
 		{
-			header("Location:login.php");
+			//mysql_query("INSERT INTO programs(sno,user_rollno) VALUES('1','$roll')");
+			//mysql_query("INSERT INTO programs(sno,user_rollno) VALUES('2','$roll')");
+			//mysql_query("INSERT INTO programs(sno,user_rollno) VALUES('3','$roll')");
+			mysql_query("CREATE TABLE `article-management-system`.`$uname` ( `sno` INT(3) NOT NULL AUTO_INCREMENT , `user_rollno` VARCHAR(15) NOT NULL , PRIMARY KEY (`sno`)) ENGINE = InnoDB");
+			header("Location:index.php");
 			?>
 			
 			<?php
@@ -46,7 +50,10 @@ if(isset($_POST['btn-signup']))
 <center>
 <div id="login-form">
 <form method="post">
-<table align="center" width="30%" border="0">
+<table align="right" width="35%" border="0">
+<tr>
+	<td><h1>Register</h1></td>
+</tr>
 <tr>
 <td><input type="text" name="uname" placeholder="Name" required /></td>
 </tr>
@@ -62,14 +69,9 @@ if(isset($_POST['btn-signup']))
 <tr>
 <td><button type="submit" name="btn-signup">Register</button></td>
 </tr>
-<tr>
-<td><a href="index.php">Sign In</a></td>
-</tr>
 </table>
 </form>
 </div>
 </center>
 </body>
 </html>
-
-?>
