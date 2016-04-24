@@ -4,15 +4,18 @@ $con=mysqli_connect("localhost","root","hey","article-management-system");
   	session_start();
   	$user=$_SESSION['user'];
   	$no=$_POST['labno'];
+
     //505
     $usrs="try";
     $result1=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");
-    //506
     $usrs="Vidushi";
     $result2=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");
-    //507
     $usrs="Amandeep";
-    $result3=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");
+    $result3=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");    
+    //506
+    //$result3=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");
+    //507
+    //$result4=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");
     //508
     $usrs="rishabh0402";
     $result4=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");
@@ -25,8 +28,14 @@ $con=mysqli_connect("localhost","root","hey","article-management-system");
     //522
     $usrs="lokesh";
     $result7=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");
-    //$result=mysqli_query($con,"SELECT user_rollno,$no from programs where user_rollno='$user' ");
+    //511
+    $usrs="kartik";
+    $result8=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");
+    //512
+    $usrs="newuser";
+    $result9=mysqli_query($con,"SELECT sno,user_rollno,$no from $usrs order by user_rollno asc ");
     
+
 
 ?>
 
@@ -104,15 +113,14 @@ print("<td><h1>Prog-no.</h1></td>");
 print("<td><h1>Program</h1></td>");
 print("</tr>");
 }
-  
-
-    $i=0;
+         $i=0;
       while($out=mysqli_fetch_array($result1))
       {
         $i++;
         $n=$out['user_rollno'];
         $noa=$out['sno'];
         $l=$out['2'];
+
                	
         ?>
         <tr>
@@ -121,18 +129,16 @@ print("</tr>");
         <td><?php echo $l; ?></td>
         </tr>
         <?php
-
       }
-      ?>
-      <?php
 
-$i=0;
+      $i=0;
       while($out=mysqli_fetch_array($result2))
       {
         $i++;
         $n=$out['user_rollno'];
         $noa=$out['sno'];
         $l=$out['2'];
+
                 
         ?>
         <tr>
@@ -141,19 +147,15 @@ $i=0;
         <td><?php echo $l; ?></td>
         </tr>
         <?php
-
       }
-
-?>
-<?php
-
-$i=0;
+      $i=0;
       while($out=mysqli_fetch_array($result3))
       {
         $i++;
         $n=$out['user_rollno'];
         $noa=$out['sno'];
         $l=$out['2'];
+
                 
         ?>
         <tr>
@@ -162,19 +164,15 @@ $i=0;
         <td><?php echo $l; ?></td>
         </tr>
         <?php
-
       }
-
-?>
-<?php
-
-$i=0;
+      $i=0;
       while($out=mysqli_fetch_array($result4))
       {
         $i++;
         $n=$out['user_rollno'];
         $noa=$out['sno'];
         $l=$out['2'];
+
                 
         ?>
         <tr>
@@ -183,19 +181,15 @@ $i=0;
         <td><?php echo $l; ?></td>
         </tr>
         <?php
-
       }
-
-?>
-<?php
-
-$i=0;
+      $i=0;
       while($out=mysqli_fetch_array($result5))
       {
         $i++;
         $n=$out['user_rollno'];
         $noa=$out['sno'];
         $l=$out['2'];
+
                 
         ?>
         <tr>
@@ -204,19 +198,15 @@ $i=0;
         <td><?php echo $l; ?></td>
         </tr>
         <?php
-
       }
-
-?>
-<?php
-
-$i=0;
+      $i=0;
       while($out=mysqli_fetch_array($result6))
       {
         $i++;
         $n=$out['user_rollno'];
         $noa=$out['sno'];
         $l=$out['2'];
+
                 
         ?>
         <tr>
@@ -225,19 +215,15 @@ $i=0;
         <td><?php echo $l; ?></td>
         </tr>
         <?php
-
       }
-
-?>
-<?php
-
-$i=0;
+      $i=0;
       while($out=mysqli_fetch_array($result7))
       {
         $i++;
         $n=$out['user_rollno'];
         $noa=$out['sno'];
         $l=$out['2'];
+
                 
         ?>
         <tr>
@@ -246,10 +232,43 @@ $i=0;
         <td><?php echo $l; ?></td>
         </tr>
         <?php
-
       }
+      $i=0;
+      while($out=mysqli_fetch_array($result8))
+      {
+        $i++;
+        $n=$out['user_rollno'];
+        $noa=$out['sno'];
+        $l=$out['2'];
 
-?>
+                
+        ?>
+        <tr>
+        <td><?php echo $n; ?></td>
+        <td><?php echo $noa; ?></td>
+        <td><?php echo $l; ?></td>
+        </tr>
+        <?php
+      }
+      $i=0;
+      while($out=mysqli_fetch_array($result9))
+      {
+        $i++;
+        $n=$out['user_rollno'];
+        $noa=$out['sno'];
+        $l=$out['2'];
+
+                
+        ?>
+        <tr>
+        <td><?php echo $n; ?></td>
+        <td><?php echo $noa; ?></td>
+        <td><?php echo $l; ?></td>
+        </tr>
+        <?php
+      }
+      ?>
+      
 
 </table>
 </center>

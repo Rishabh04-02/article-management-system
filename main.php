@@ -11,6 +11,9 @@ $con=mysqli_connect("localhost","root","hey","article-management-system");
     $result=mysqli_query($con,"SELECT sno from programs ");
     $out=mysqli_fetch_array($result);
 
+      
+
+
     //$result=mysqli_query($con,"SELECT sno from questions ");
     //$out=mysqli_fetch_array($result);
     //posting the program in database here
