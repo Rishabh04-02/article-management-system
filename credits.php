@@ -26,7 +26,7 @@
 		<td>14MI507 - Amandeep Prasad</td>
 	</tr>
 	<td>3.</td>
-		<td>14MI508 - <a href="../../Rishabh site/" target="_blank">Rishabh Chaudhary</a></td>
+		<td>14MI508 - Rishabh Chaudhary</td>
 	</tr>
 	<td>4.</td>
 		<td>14MI509 - Chanderkanta Bhatti</td>

@@ -7,8 +7,6 @@ $con=mysqli_connect("localhost","root","hey","article-management-system");
   	$result=mysqli_query($con,"SELECT user_rollno,$no from $user where user_rollno='$user' ");
     //mysqli_query($con,"UPDATE questions set `lab$labn`='$progra' where sno='$qstnn'");
     
-    
-
 ?>
 
 <!DOCTYPE html>
