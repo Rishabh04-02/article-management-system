@@ -49,6 +49,13 @@
 	<td>10.</td>
 		<td>Students will be informed if their program matches more than 40% with any other program.</td>
 	</tr>
+	<tr>
+	<td></td>
+		<td><h1>More Features that can be implemented</h1></td>
+	</tr>
+	<td>1.</td>
+		<td>Rating to every program can be given by teacher & that will be shown to resp. student.</td>
+	</tr>
 </table>
 </center>
 <br/><br/><br/>

@@ -38,6 +38,7 @@ $con=mysqli_connect("localhost","root","hey","article-management-system");
   </tr>
   </tr>
 </table>
+<br/>
 <table align="center" width="80%" border="0">
   <tr>
     <td><a href="addquestion.php"><button>Add Questions</button></a></td>

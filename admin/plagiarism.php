@@ -1,3 +1,12 @@
+<?php
+$con=mysqli_connect("localhost","root","hey","article-management-system");
+	 	session_start();
+  	if(!isset($_SESSION['user']))
+  	{
+  		header("Location:index.php");
+  	}
+$user=$_SESSION['user'];
+  	?>
 <!DOCTYPE html>
 <head>
 <title>Article Management System</title>
@@ -5,7 +14,7 @@
 </head>
 <body>
 <?php 
-	include_once "./header.php";
+	include_once "./heading.php";
 ?>
 <center>
 <a href="admin.php"><button>Return Back</button></a>

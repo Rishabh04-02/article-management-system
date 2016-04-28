@@ -5,10 +5,9 @@
 </head>
 <body>
 <div id="footer">
-	<label><a href="credits.php">&copy; : All rights reserved</a></label>
-	<div id="right">
-	<a href="features.php">Features of project</a>
-	</div>
+	<label><a href="credits.php">&copy; : All rights reserved</a></label> |
+	<label><a href="features.php"> Features of project</a></label>
+	
 	
 	</div>
 </body>

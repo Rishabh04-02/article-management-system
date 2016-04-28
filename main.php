@@ -29,6 +29,7 @@ $con=mysqli_connect("localhost","root","hey","article-management-system");
     //mysqli_query($con,"ALTER TABLE `programs` ADD `sno` VARCHAR(5000) NOT NULL");
     //mysqli_query($con,"UPDATE programs set `sno`='$qstnn' where user_rollno='$user'");
     //mysqli_query($con,"UPDATE programs set `user_rollno`='$user' ");
+    //mysqli_query($con,"ALTER TABLE `$user` ADD `lab$labn`='$progra' where sno='$qstnn' ");
     mysqli_query($con,"UPDATE $user set `lab$labn`='$progra' where sno='$qstnn' ");
     mysqli_query($con,"UPDATE $user set `user_rollno`='$user' ");
     //mysqli_query($con,"UPDATE programs set `user_rollno`='$user'"); `user_rollno`='$user'

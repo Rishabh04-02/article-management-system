@@ -7,7 +7,7 @@
 <div id="header">
 	<label><a>Article Management System</a></label>
 	<div id="right">
-	<a href="admin">Admin login</a>
+	<a href="admin"><button>Admin login</button></a>
 	</div>
 	
 	</div>

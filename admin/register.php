@@ -39,7 +39,6 @@ if(isset($_POST['btn-signup']))
 
 </head>
 <body>
-<center>
 <div id="login-form">
 <form method="post">
 <table align="right" width="35%" border="0">
@@ -58,6 +57,5 @@ if(isset($_POST['btn-signup']))
 </table>
 </form>
 </div>
-</center>
 </body>
 </html>

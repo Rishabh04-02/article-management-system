@@ -25,6 +25,8 @@ if(isset($_POST['btn-signup']))
 			//mysql_query("INSERT INTO programs(sno,user_rollno) VALUES('2','$roll')");
 			//mysql_query("INSERT INTO programs(sno,user_rollno) VALUES('3','$roll')");
 			mysql_query("CREATE TABLE `article-management-system`.`$uname` ( `sno` INT(3) NOT NULL AUTO_INCREMENT , `user_rollno` VARCHAR(15) NOT NULL , PRIMARY KEY (`sno`)) ENGINE = InnoDB");
+			mysql_query("INSERT INTO $uname(sno,user_rollno) VALUES(1,'$uname'),(2,'$uname'),(3,'$uname')");
+
 			header("Location:index.php");
 			?>
 			
@@ -47,7 +49,7 @@ if(isset($_POST['btn-signup']))
 
 </head>
 <body>
-<center>
+
 <div id="login-form">
 <form method="post">
 <table align="right" width="35%" border="0">
@@ -72,6 +74,6 @@ if(isset($_POST['btn-signup']))
 </table>
 </form>
 </div>
-</center>
+
 </body>
 </html>

@@ -12,6 +12,9 @@ body
 	font-family: Ubuntu, Helvetica, sans-serif;
 	font-size:  100%;
 }
+center{
+padding-top: 20px;	
+}
 #login-form
 {
 	margin-top:50px;
@@ -48,8 +51,10 @@ table
 {
 	border:solid #dcdcdc 1px;
 	padding:25px;
-	//border:solid #8B8B83 1px;
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+table:hover{
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
 }
 table tr,td
 {
@@ -58,9 +63,8 @@ table tr,td
 	box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
 }
 table tr,td:hover{
-		border:solid cyan 1px;
-		//color: white;
-		//background-color: black;
+		border:transparent;
+		box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
 }
 table tr td input
 {
@@ -90,9 +94,29 @@ table tr td button
 	font-weight:bolder;
 	text-transform:uppercase;
 }
+button
+{
+	width: auto;
+	height:45px;
+	border:1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background:rgba(12,45,78,11);
+	background:-moz-linear-gradient(top, #595959 , #515151);
+	border-radius:3px;
+	color:#f9f9f9;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+button:hover{
+	box-shadow: 2px 2px 2px rgba(1,0,0,0.2);
+    color:#C0FF3E;
+}
 table tr td button:hover{
 	box-shadow: 2px 2px 2px rgba(1,0,0,0.2);
-    color:#FFBBFF;
+    color:#C0FF3E;
 }
 table tr td button:active
 {
@@ -149,16 +173,9 @@ table tr td a
 	
 }
 
-#header #right #content
+#header #right a
 {
-	position:relative;
-	top:20px;
-	right:100px;
-	color:#fff;
-}
-#header #right #content a
-{
-	color:#00a2d1;
+	
 }
 
 
@@ -174,10 +191,11 @@ table tr td a
 {
 	margin-top: 45%;
 	width:100%;
+	padding-top:15px;
 	text-align: center;
 	font-size: 20px;
 	vertical-align: auto;
-	height:60px;
+	height:40px;
 	background-color:#383838;
 	font-family:Ubuntu, Geneva, sans-serif;
 }
@@ -192,7 +210,7 @@ table tr td a
 	text-align: center;
 	color: #9E9E9E;
 	padding-top: 20px;
-	font-size:20px;
+	font-size:17px;
 }
 
 #footer a button{

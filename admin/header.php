@@ -7,7 +7,7 @@
 <div id="header">
 	<label><a>Article Management System - Admin login</a></label>
 	<div id="right">
-	<a href="../index.php">Student login</a>
+	<a href="../index.php"><button>Student login</button></a>
 	</div>
 	
 	</div>
