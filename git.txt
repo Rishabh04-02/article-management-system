@@ -1,6 +1,0 @@
-index.php
-main.php
-submissions.php
-register.php
-login.php
-admin.php
