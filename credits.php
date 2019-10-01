@@ -15,11 +15,11 @@
 <table>
 	<tr>
 	<td></td>
-			<td><h1>Credits for Project - Article Management System</h1></td>
+			<td><h1>credits for project - Article Management System</h1></td>
 
 	</tr>
 	<td>1.</td>
-		<td>14MI508 - Rishabh Chaudhary</td>
+		<td>67I98 - Rishabh </td>
 	</tr>
 	
 </table>
